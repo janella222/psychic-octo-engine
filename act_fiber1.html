@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>sign up</title>
+<link rel="icon" type="image/x-icon" href="src/images/title1.ico">
+
+<style>
+
+body {
+    background-color: rgb(200, 222, 242);
+    font-family : sans-serif;
+    font-size : 9pt;
+    margin-left : 4px;
+    color: black;
+	}
+
+.title {
+	background-color: rgb(200, 222, 242);
+	color: navy;
+	font-size : 13;
+	font-family : Verdana, Arial, Helvetica;
+	font-weight: bold;
+	border-width: 1;
+	width: 600px;
+	cursor: pointer;
+	}
+
+.area1 {
+	background-color: rgb(200, 222, 242);
+	color: black;
+	font-size : 10;
+	font-family : Verdana, Arial, Helvetica;
+	font-weight: normal;
+	border-width: 1;
+	width: 600px;
+	}
+.area2 {
+	background-color: rgb(200, 222, 242);
+	color: blue;
+	font-size : 12;
+	font-family : Verdana, Arial, Helvetica;
+	font-weight: normal;
+	border-width: 1;
+	margin-right: 100px;
+	width: 600px;
+	}
+  
+.cmd {
+	background-color : black;
+	background-color: rgb(200, 222, 242);
+	font-size : 12;
+	font-family : Verdana, Arial, Helvetica;
+	font-weight: normal;
+	border-width: 1;
+    width: 700px;
+  padding: 4px;
+	}
+
+
+  
+.colorred {
+	color: red;
+  font-weight: bold;
+	}
+  
+.colorblue {
+	color: lightblue;
+	}
+  
+.colorgreen {
+	color: lightgreen;
+	font-weight: bold;
+	}         
+    nav ul {
+list-style-type: none;
+background-color: #99c2ff;
+border: 1px solid #111111;
+border-radius: 10px ;
+font-family: sans-serif;
+font-weight: bold;
+padding: 8px;
+}
+nav ul li {
+display: inline;
+/*border-right: 2px solid #111111;*/
+padding-right: 8px;
+padding-left: 8px;
+}
+nav ul li:last-child {
+border-right: none;
+}
+nav ul li a {
+text-decoration: none;
+color: #111111;
+font-size:12px;
+}
+
+.app {
+    background-color: rgb(200, 222, 242);
+}
+
+.Home__button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 7px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+	border: 2px solid #4CAF50;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-bottom: 10px;
+	}
+
+  .Home__button a {
+	color: #abbedd;
+	text-decoration: none;
+}
+
+</style>
+
+<!-- begin script                      -->
+<SCRIPT language="javascript">
+
+    function showhide(name){
+    var obj = (document.getElementById)? document.getElementById(name) : eval("document.all[name]");
+    if (obj.style.display=="none"){
+    obj.style.display="";
+    }else{
+    obj.style.display="none";
+    }
+    } 
+    
+    //-->
+    </SCRIPT>
+    <!-- end script                       -->
+    
+    </head>
+
+<body>
+    <a name="top"></a>
+    <div class="app">
+
+
+<nav>
+<ul>
+<li><a href="../index.html">zms</a></li>
+<li><span><a href="#RT">RT commands</a></span></li>
+<li><span><a href="#646BD">646 BD</a></span></li>
+<li><span><a href="#726MOD">726 MOD</a></span></li>
+<li><span><a href="#RG2524">RG 2524</a></span></li>
+<!--<li><a href="index.html">look up ONU </a></li>
+<li><a href="page2.html">page2</a></li>-->
+
+</ul>
+</nav>
+
+
+<p><img src="international_call_block.png" alt="picture"></p>
+
+                <p><h3><em><b>If we run testboard and see this in the CO equip section<p> means that it is what we call cisco fiber or ACT </p></p></em></b></h3>
+                <p><img src="testboard_ACT1.PNG" alt="picture"></p>
+                <p><h3><em><b>If we need to check or change devices on the port itself >>> In Resolve hover over provisioning at the top >>>> go down to Customer PE >> Select Cisco RT (CA) </p></em></b></h3>
+
+
+                <p><img src="act_RT_port1.PNG" alt="picture"></p>
+                <p><h3><em><b>Select Get Port Configuration >> Select the fiber port for the account we are looking at >> select the Slot and port that we gathered from testboard</p></em></b></h3>
+                <p><img src="act_RT_port2.PNG" alt="picture"></p>
+
+
+                
+
+
+                <div class="Home__button">
+                    <a href="#top">Back to top</a> 
+                </div></br></br>
+
+                <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+                <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+                <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+                <img src="asteroid.png" height="50px" width="50px" alt="picture"><br><br>
+
+                <a name="RT"></a> 
+                <h1>Commands for Cajun RT</h1>
+
+                <div class="title">To Connect to cajun RT</div>
+<div class="title" onClick="showhide('RT__sect0.5');">Sign in to RT</div>
+<div class="area1" id="RT__sect0.5" style="display:none;"><span class="area2">
+Use telnet to connect<br>
+User: level2</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect0');">Show all MACs on a port</div>
+<div class="area1" id="RT__sect0" style="display:none;"><span class="area2">
+show aft entry port-binding forward X/Y
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect1');">Find a port with a MAC</div>
+<div class="area1" id="RT__sect1" style="display:none;"><span class="area2">
+ show aft entry mac xx:xx:xx:xx:xx:xx
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect2');">Find a MAC with IP</div>
+<div class="area1" id="RT__sect2" style="display:none;"><span class="area2">
+show ip arp xxx.xxx.xxx.xxx
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect3');">Add a MAC</div>
+<div class="area1" id="RT__sect3" style="display:none;"><span class="area2">
+set aft entry xx:xx:xx:xx:xx:xx vlan zzz port-binding forward x/y<br>
+</span>
+the zzz for the vlan is the port + 400<br><br></div>
+
+<div class="title" onClick="showhide('RT__sect4');">Remove a MAC</div>
+<div class="area1" id="RT__sect4" style="display:none;"><span class="area2">
+clear aft entry xx:xx:xx:xx:xx:xx
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect5');">Turn learning on</div>
+<div class="area1" id="RT__sect5" style="display:none;"><span class="area2">
+enable<br>
+configure<br>
+set port allow-learning x/y enable
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect6');">Turn known mode off (disable mac filter)</div>
+<div class="area1" id="RT__sect6" style="display:none;"><span class="area2">
+enable<br>
+configure<br>
+set port known-mode x/y disable
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect7');">Show current port status</div>
+<div class="area1" id="RT__sect7" style="display:none;"><span class="area2">
+show port status x/y
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect8');">Enable a port</div>
+<div class="area1" id="RT__sect8" style="display:none;"><span class="area2">
+set port enable x/y
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect9');">Disable Port</div>
+<div class="area1" id="RT__sect9" style="display:none;"><span class="area2">
+set port disable x/y
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect10');">Show status of mac filter</div>
+<div class="area1" id="RT__sect10" style="display:none;"><span class="area2">
+show port x/y
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect11');">Show correct vlan</div>
+<div class="area1" id="RT__sect11" style="display:none;"><span class="area2">
+show vlan
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect12');">Save config</div>
+<div class="area1" id="RT__sect12" style="display:none;"><span class="area2">
+copy run start<br>
+</span>
+Note: exit out of configure and enable modes before saving config to save yourself from rebooting RT<br><br></div>
+
+<div class="title" onClick="showhide('RT__sect13');">Logout</div>
+<div class="area1" id="RT__sect13" style="display:none;"><span class="area2">
+exit
+</span><br><br></div>
+
+<div class="title" onClick="showhide('RT__sect14');">Cajun Port Pinger</div>
+<div class="area1" id="RT__sect14" style="display:none;"><span class="area2">
+cajun.port.pinger.pl rt206<br>
+</span>
+DO NOT log into RT to run command
+<br><br></div>
+
+<div class="title" onClick="showhide('RT__sect0');"></div>
+<div class="area1" id="RT__sect0" style="display:none;"><span class="area2">
+</span><br><br></div>
+
+
+
+
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="asteroid.png" height="50px" width="50px" alt="picture"><br><br>
+
+
+
+
+<a name="726MOD"></a>
+			                    
+<h1>Commands for RG 726 Mods</h1>
+
+
+    <div class="title" onClick="showhide('section0');">Show RG Power/Battery Status</div>
+    <div class="area1" id="section0" style="display:none;"><span class="area2">
+    system info battery
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section1');">Show the MAC table</div>
+    <div class="area1" id="section1" style="display:none;"><span class="area2">
+    switch show fdb
+    </span><br><br></div>
+
+
+
+    <div class="title" onClick="showhide('section2.1');">Setting New Password</div>
+    <div class="area1" id="section2.1" style="display:none;"><span class="area2">
+    user password<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section3');">Checking LAN Port Status</div>
+    <div class="area1" id="section3" style="display:none;"><span class="area2">
+    switch show port lanX
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section3.1');">Checking all LAN Port Status'</div>
+    <div class="area1" id="section3.1" style="display:none;"><span class="area2">
+    switch list ports
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section2');">Show RG Port Counters/Errors</div>
+    <div class="area1" id="section2" style="display:none;"><span class="area2">
+    switch show port lan# counters<br>
+    </span>
+    (# = Port Name [lan1, lan2, lan3, wan])<br><br></div>
+
+    <div class="title" onClick="showhide('section6');">Reset RG port counters</div>
+    <div class="area1" id="section6" style="display:none;"><span class="area2">
+    switch reset port lanx counters
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section4');">Enable RG LAN Port</div>
+    <div class="area1" id="section4" style="display:none;"><span class="area2">
+    switch set port lan1 status Enabled
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section5');">Disable RG LAN Port</div>
+    <div class="area1" id="section5" style="display:none;"><span class="area2">
+    switch set port lan1 status Disabled
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section5.1');">DisableOnPowerFailure lan ports 2-6</div>
+    <div class="area1" id="section5.1" style="display:none;"><span class="area2">
+    switch set port lan2 DisableOnPowerFailure Disabled<br>
+    switch set port lan3 DisableOnPowerFailure Disabled<br>
+    switch set port lan4 DisableOnPowerFailure Disabled<br>
+    switch set port lan5 DisableOnPowerFailure Disabled<br>
+    switch set port lan6 DisableOnPowerFailure Disabled<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg<br>
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section6.1');">Shows uptime</div>
+    <div class="area1" id="section6.1" style="display:none;"><span class="area2">
+    system info
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section6.2');">Shows time</div>
+    <div class="area1" id="section6.2" style="display:none;"><span class="area2">
+    sntpclient show status
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section6.3');">Shows arp table</div>
+    <div class="area1" id="section6.3" style="display:none;"><span class="area2">
+    ip list arpentries
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section10');">Console Mode</div>
+    <div class="area1" id="section10" style="display:none;"><span class="area2">
+    console enable
+    </span><br><br></div>
+
+
+    <div class="title" onClick="showhide('section7');">Saving Settings</div>
+    <div class="area1" id="section7" style="display:none;"><span class="area2">
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section8');">Reset/Restart RG</div>
+    <div class="area1" id="section8" style="display:none;"><span class="area2">
+    system restart
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section9');">Logout of RG</div>
+    <div class="area1" id="section9" style="display:none;"><span class="area2">
+    user logout<br>
+    </span>
+    can be shorted to u l<br><br></div></br></br>
+
+
+    <div class="title"><div style="color: rgb(24, 11, 11)">
+    VIDEO</div>
+    <div  onClick="showhide('section12');">Check snooping</div>
+    </div>
+    <div class="area1" id="section12" style="display:none;"><span class="area2">
+    bridge list igmpsnoop groupinfo
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section14');">Set Snooping </div>
+    <div class="area1" id="section14" style="display:none;"><span class="area2">
+    bridge set igmpsnoop mode proxy<br>
+    bridge set igmpsnoop lastmberqueryintvl 0<br>
+    bridge set igmpsnoop robustnessvar 1<br>
+    bridge set igmpsnoop enabled
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section15');">Set the Speed for Baluns (Setting for Half Duplex)</div>
+    <div class="area1" id="section15" style="display:none;"><span class="area2">
+    switch set port lanx speed AUTO<br>
+    </span>
+    Possible speeds: AUTO 10H 10F 100H 100F 1000H 1000F
+    <br><br></div></br></br>
+
+
+    <div class="title2"><div style="color: rgb(52, 26, 26)">
+    ACCESS LINE</div>
+    <!--
+    <div  onClick="showhide('section16');">Create a Voice Port for Provisioning</div>
+    </div>
+    <div class="area1" id="section16" style="display:none;"><span class="area2">
+    voip mgcp protocol enable<br>
+    voip mgcp protocol set netinterface ip0<br>
+    voip mgcp protocol set profile ags<br>
+    voip mgcp callagent create imerge contact x.x.x.x	(xxx.xxx.xxx.xxx = iMerge IP Address)<br>
+    voip ep analogue create tel1 type al-fxs-del physical-port tel1	(x = Port ID)<br>
+    voip ep analogue enable tel1	(x = Port ID)<br>
+    voip ep analogue set tel1 vad off	(x = Port ID)<br>
+    voip ep analogue set tel1 country usa	(x = Port ID)<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+    //-->
+
+    <div class="title" onClick="showhide('section16.1');">Check Provisioning</div>
+    <div class="area1" id="section16.1" style="display:none;"><span class="area2">
+    voip mgcp protocol show
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section16.2');">Check what G6 is is pointing to</div>
+    <div class="area1" id="section16.2" style="display:none;">
+    RSVL G6 = 172.21.<b>240</b>.135<br>
+    NHLD G6 = 172.21.<b>254</b>.135<br><br>
+    <span class="area2">
+    voip mgcp callagent list
+    </span>
+    <br><br></div>
+
+    <div class="title" onClick="showhide('section16.3');">Deprovision all MGCP lines on an RG</div>
+    <div class="area1" id="section16.3" style="display:none;"><span class="area2">
+    voip mgcp protocol disable<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section17');">Change Gain Setting</div>
+    <div class="area1" id="section17" style="display:none;"><span class="area2">
+    voip ep analogue set tel1 rxgain -6<br>
+    voip ep analogue set tel1 txgain -6<br>
+    </span>
+    Telephony sets these to -6 for RG 613 & 656, -9 for the 646<br>
+    txgain: far end echo<br>
+    rxgain: near end echo
+    <br><br></div>
+
+    <div class="title" onClick="showhide('section18');">Check Tel port provisioning (MGCP & SIP)</div>
+    <div class="area1" id="section18" style="display:none;"><span class="area2">
+    voip ep analogue show tel1
+    </span><br><br></div></br></br>
+
+    <!--
+    <div class="title2" onClick="showhide('section18.5');">Checking if calls ring to RG</div>
+    <div class="area1" id="section18.5" style="display:none;"><span class="area2">
+    c e ati<br>
+    tell mgcp enable debug=packet<br>
+    </span>
+    c e ati switches from CLI to console mode - type exit to return<br>
+    Place a test call - it should display something along these lines<br>
+    "mgcp.nif: Incoming packet - time: Wed May 27 12:52:53 1970"<br>
+    "dlcx 25517124 aal/0@[10.254.28.32] MGCP 1.0 NCS 1.0"<br>
+    "EOF>"<br>
+    if you get nothing then the RG is not getting the ring<br>
+    When done you will need to disable debug mode and exit console mode with:<br>
+    <span class="area2">
+    tell mgcp disable debug=packet<br>
+    exit
+    </span>
+    <br><br></div>
+    //-->
+
+    <div class="title" onClick="showhide('section19');"><div style="color: rgb(69, 22, 22)">
+    DPS</div>
+    Checking SIP Call Agent
+    </div>
+    <div class="area1" id="section19" style="display:none;"><span class="area2">
+    voip sip proxyserver list
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section20');">Check if line is registered and what number is assigned to a Tel Port (DPS)</div>
+    <div class="area1" id="section20" style="display:none;"><span class="area2">
+    voip sip user show u#<br>
+    </span>
+    U1=Tel1 U2=Tel2
+    <br><br></div>
+
+    <div class="title" onClick="showhide('section20.1');">Deprovision all SIP lines on an RG</div>
+    <div class="area1" id="section20.1" style="display:none;"><span class="area2">
+    voip sip protocol disable<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section20.2');">Deprovision a SIP line one port at a time on an RG</div>
+    <div class="area1" id="section20.2" style="display:none;"><span class="area2">
+    voip sip user delete u#<br>
+    voip ep analogue delete tel#<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg<br>
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section21');">Change Gain Setting</div>
+    <div class="area1" id="section21" style="display:none;"><span class="area2">
+    voip ep analogue set tel1 rxgain -6<br>
+    voip ep analogue set tel1 txgain -6<br>
+    </span>
+    Telephony sets these to -6 for RG 613 & 656, -9 for the 646<br>
+    txgain: far end echo<br>
+    rxgain: near end echo
+    <br><br></div>
+
+    <div class="title" onClick="showhide('section22');">Checking if calls ring to RG</div>
+    <div class="area1" id="section22" style="display:none;"><span class="area2">
+    system log enable voip sip-msg</span><br><br>
+    Place a test call - it should display something along these lines<br><br>
+    SIP/2.0 200 OK<br>
+    User-Agent: ATI-iMG626MOD/3-8-02_25<br>
+    Via: SIP/2.0/UDP 172.21.252.18:5060;branch=z9hG4bK7995792d1dd410cf182a9143047731b65457b206-1476396523197606<br>
+    From: CONSOLIDATEDCOM <sip:15073871511@mgcf-stdn.lcs.fs.surewest.com:5060;user=phone>;tag=5457b20b-1476396523137153lucentNGFS-007732<br>
+    To: [sip:+19167714336@icsf-stdn.swfs1.fs.surewest.com:5060;user=phone];tag=0000EA05000C251B08BB<br>
+    "bunch more info here (that's right, bunch is the technical term for it)"<br><br>
+    if you get nothing then the RG is not getting the ring<br>
+    When done you will need to disable logging with:<br><br>
+    <span class="area2">
+    system log disable voip sip-msg<br>
+    </span>
+    <br><br></div>
+
+    <div class="title" onClick="showhide('section23');">Special Reboot</div>
+    <div class="area1" id="section23" style="display:none;"><br>
+    Call hitting RG but no dial tone. In some cases, a special reboot is able to restore dial tone.<br>
+    <ol>
+    <li>Telnet to the RG and put in the command<br> 
+        <span class="area2">c e</span><br>
+        <span class="area2">tell sip enable debug=packet</span><br>
+    <li>Make a test call to the phone number and check you have the SIP INVITE and Ringing messages only<br>
+    <pre>
+    ++++++++++++++++++++
+    sip.nif: Incoming packet - time: Wed Oct 24 13:14:49 2012
+    <span class="redtext">INVITE</span> sip:+19166443433@10.252.13.6:5060 SIP/2.0
+    User-Agent: ATI-iMG726MOD/3-8-02_25
+    Via: SIP/2.0/UDP 172.21.252.16:5060;branch=z9hG4bKe95fbea41de36c5cc0b245acb37ddf225075f87d-1351109689224293
+    From: "SWtestline" <sip:+19167497077@fs.surewest.com;user=phone>;tag=5075f881-1351109689179344lucentNGFS-021210
+    To: <sip:+19166443433@fs.surewest.com>
+    Call-ID: LU-1351109689179332@dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com
+    CSeq: 1 INVITE
+    Contact: <sip:dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com:5060>
+    Max-Forwards: 68
+    Supported: 100rel
+    Content-Length: 179
+    Content-Type: application/sdp
+    P-Asserted-Identity: "SWtestline" <sip:+19167497077@fs.surewest.com>
+    Allow: INVITE,BYE,REGISTER,ACK,OPTIONS,CANCEL,SUBSCRIBE,NOTIFY,PRACK,INFO,REFER,UPDATE
+    Request-Disposition: no-fork
+    Record-Route: <sip:pcsf-stdn.imsgroup0-000.swfs1.fs.surewest.com:5060;lr;lsstag=pt-2523-2523>
+    P-Called-Party-ID: <sip:+19166443433@fs.surewest.com;user=phone>
+
+    v=0
+    o=LucentFS5000 895217605 895217605 IN IP4 10.236.0.241
+    s=-
+    c=IN IP4 10.236.0.241
+    t=0 0
+    m=audio 50620 RTP/AVP 0 13
+    a=rtpmap:0 PCMU/8000
+    a=rtpmap:13 CN/8000
+    a=sendrecv
+    <EOF>
+
+
+    --------------
+    sip.ua.AADJ6QAN2gR4kwxx: Outgoing packet - time: Wed Oct 24 13:14:49 2012
+    <span class="redtext">SIP/2.0 180 Ringing</span>
+    User-Agent: ATI-iMG646BD-ON/2-5_55_10_61
+    Via: SIP/2.0/UDP 172.21.252.16:5060;branch=z9hG4bKe95fbea41de36c5cc0b245acb37ddf225075f87d-1351109689224293
+    From: SWtestline <sip:+19167497077@fs.surewest.com;user=phone>;tag=5075f881-1351109689179344lucentNGFS-021210
+    To: <sip:+19166443433@fs.surewest.com>;tag=AADJ6QAN2gR4kwxx
+    Call-ID: LU-1351109689179332@dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com
+    CSeq: 1 INVITE
+    Contact: <sip:+19166443433@10.252.13.6:5060>
+    Supported: 100rel,replaces,timer
+    Content-Length: 0
+
+    <EOF></pre>
+    <li>Hang up then put in this command:<br> 
+    <span class="area2">restart</span> 
+    <li>Do a continuous ping on the ip and when it is pingable and telnet to RG and check whether the line is registered: voip sip user show u1
+    <li>Call the number again to see someone at home or the answering machine. If still ring no answer (only see INVITE and Ringing messages) then check phone and wiring
+    </ol>
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section24');">run MLT to test IW</div>
+    <div class="area1" id="section24" style="display:none;"><span class="area2">
+    voip ep analogue diagnose tel# external
+    </span><br>
+    (# = telephone port number)<br><br></div>
+
+    <div class="title" onClick="showhide('section0');"></div>
+    <div class="area1" id="section0" style="display:none;"><span class="area2">
+    </span><br><br></div>
+
+    <div class="title" onClick="showhide('section0');"></div>
+    <div class="area1" id="section0" style="display:none;"><span class="area2">
+    </span><br><br></div></br></br>
+
+    <div class="Home__button">
+        <a href="#top">Back to top</a> 
+    </div></br></br>
+
+                <p><img src="disk1.PNG" height="50px" width="50px" alt="picture"></p>
+
+<h1>Commands for RG 613/646/656</h1>
+                <a name="646BD"></a> 
+    <div class="title" onClick="showhide('RG613/646/656__sect0');">Show RG Power/Battery Status</div>
+    <div class="area1" id="RG613/646/656__sect0" style="display:none;"><span class="area2">
+    system info battery
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect1');">Show the MAC table</div>
+    <div class="area1" id="RG613/646/656__sect1" style="display:none;"><span class="area2">
+    switch show fdb
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect2.1');">Setting New Password</div>
+    <div class="area1" id="RG613/646/656__sect2.1" style="display:none;"><span class="area2">
+    user password<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect3');">Checking LAN Port Status</div>
+    <div class="area1" id="RG613/646/656__sect3" style="display:none;"><span class="area2">
+    switch show port lanX
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect2');">Show RG Port Counters/Errors</div>
+    <div class="area1" id="RG613/646/656__sect2" style="display:none;"><span class="area2">
+    switch show port lan# counters<br>
+    </span>
+    (# = Port Name [lan1, lan2, lan3, wan])<br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect6');">Reset RG port counters</div>
+    <div class="area1" id="RG613/646/656__sect6" style="display:none;"><span class="area2">
+    switch reset port lanx counters
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect4');">Enable RG LAN Port</div>
+    <div class="area1" id="RG613/646/656__sect4" style="display:none;"><span class="area2">
+    switch enable port lanX
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect5');">Disable RG LAN Port</div>
+    <div class="area1" id="RG613/646/656__sect5" style="display:none;"><span class="area2">
+    switch disable port lanX
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect6.1');">Shows uptime</div>
+    <div class="area1" id="RG613/646/656__sect6.1" style="display:none;"><span class="area2">
+    switch show
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect6.2');">Shows time</div>
+    <div class="area1" id="RG613/646/656__sect6.2" style="display:none;"><span class="area2">
+    sntpclient show status
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect6.3');">Update time</div>
+    <div class="area1" id="RG613/646/656__sect6.3" style="display:none;">
+    If the time is incorrect on an RG, there are 2 things you will need to check<br>
+    1.  Time Zone<br>
+    2.  Time Server<br><br>
+    
+    The 2 time zones you will be using<br>
+    <b>PST</b> - Pacific Standard Time -- Begins in the fall<br>
+    <b>PDT</b> - Pacific Daylight Time -- Begins in the spring<br><br>
+    
+    Use the commands below to set the appropriate time zone and resync the RG<br><br>
+    <span class="area2">
+    sntpclient set timezone PST<br>
+    sntpclient sync
+    </span><br><br><br><br>
+    
+    <div class="cmd">
+    <b>sntpclient show status</b>
+    <pre>
+    
+    <span class="colorgreen">sntpclient show status</span>
+    
+    
+    - SNTP CLIENT STATUS -
+    ----------------------
+    Clock Synchronized:           TRUE
+    SNTP Standard Version Number: 4
+    SNTP Mode(s) Configured:      Unicast
+    Local Time:                   <span class="colorblue">Mon, 07 Nov 2016 - 15:22:33</span>
+    Local Timezone:               <span class="colorred">PDT, US Pacific Daylight Time</span>
+    Time Difference +- UTC:       -7:00
+    Server Stratum:               2
+    Precision:                    1/1048576 of a second
+    Root Delay:                   +0.184 second(s)
+    Dispersion:                   0.1505 second(s)
+    Server Reference ID:          192.168.4.74
+    Round Trip Delay:             0 second(s)
+    Local Clock Offset:           +25200 second(s)
+    Resync Poll Interval:         30 minute(s)
+    Packet Retry Timeout:         5 second(s)
+    Packet Retry Attempts:        2
+    
+    
+    <span class="colorgreen">sntpclient set timezone PST
+    sntpclient sync</span>
+    Synchronizing local clock with associated server...
+    
+    
+    <span class="colorgreen">sntpclient show status</span>
+    
+    - SNTP CLIENT STATUS -
+    ----------------------
+    Clock Synchronized:           TRUE
+    SNTP Standard Version Number: 4
+    SNTP Mode(s) Configured:      Unicast
+    Local Time:                   <span class="colorblue">Mon, 07 Nov 2016 - 15:23:21</span>
+    Local Timezone:               <span class="colorred">PST, US Pacific Standard Time</span>
+    Time Difference +- UTC:       -8:00
+    Server Stratum:               2
+    Precision:                    1/1048576 of a second
+    Root Delay:                   +0.184 second(s)
+    Dispersion:                   0.2233 second(s)
+    Server Reference ID:          192.168.4.74
+    Round Trip Delay:             0 second(s)
+    Local Clock Offset:           +28801 second(s)
+    Resync Poll Interval:         30 minute(s)
+    Packet Retry Timeout:         5 second(s)
+    Packet Retry Attempts:        2</pre>
+    </div><br><br>
+    
+    
+    The second thing you will want to check is the time server used<br>
+    The 2 time servers we use are listed below:<br>
+     - Primary: 10.10.6.151<br>
+     - Secondary: 10.10.6.152<br><br>
+    
+    If one is having issues, you can try changing the RG to the other server<br> 
+    To view what time server is currently being used: <br><br>
+    
+    <div class="cmd">
+    <span class="colorgreen">sntpclient show association</span><br><br>
+    
+    Time Reference Server IP addr: 10.10.6.152<br>
+    Time Reference Server Hostname:<br><br>
+    </div><br><br>
+    
+    To change the time to the other server (don't forget to resync the RG): <br><br> 
+    <span class="area2">
+    sntpclient set server ipaddress 10.10.6.151<br>
+    sntpclient sync
+    </span>
+    <br><br><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect6.4');">Shows arp table</div>
+    <div class="area1" id="RG613/646/656__sect6.4" style="display:none;"><span class="area2">
+    ip list arpentries
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect10');">Console Mode</div>
+    <div class="area1" id="RG613/646/656__sect10" style="display:none;"><span class="area2">
+    console enable ati
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect11');">Enable/Disable Debug</div>
+    <div class="area1" id="RG613/646/656__sect11" style="display:none;"><span class="area2">
+    tell mgcp enable debug=packet<br>
+    tell mgcp disable debug=packet
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect7');">Saving Settings</div>
+    <div class="area1" id="RG613/646/656__sect7" style="display:none;"><span class="area2">
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div> 
+    <div class="title" onClick="showhide('RG613/646/656__sect8');">Reset/Restart RG</div>
+    <div class="area1" id="RG613/646/656__sect8" style="display:none;"><span class="area2">
+    system restart
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect9');">Logout of RG</div>
+    <div class="area1" id="RG613/646/656__sect9" style="display:none;"><span class="area2">
+    user logout<br>
+    </span>
+    can be shorted to u l<br><br></div>
+    <div class="title"><div style="color: red">
+    VIDEO</div>
+    <div  onClick="showhide('RG613/646/656__sect12');">Check snooping config</div>
+    </div>
+    <div class="area1" id="RG613/646/656__sect12" style="display:none;"><span class="area2">
+    igmp snooping show
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect13');">Set Snooping</div>
+    <div class="area1" id="RG613/646/656__sect13" style="display:none;"><span class="area2">
+    igmp snooping enable default<br>
+    igmp snooping set leavetime 0
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect14');">Set Video for RG646 MOD</div>
+    <div class="area1" id="RG613/646/656__sect14" style="display:none;"><span class="area2">
+    bridge set igmpsnoop mode proxy<br>
+    bridge set igmpsnoop enable
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect15');">Set the Speed for Baluns (Setting for Half Duplex)</div>
+    <div class="area1" id="RG613/646/656__sect15" style="display:none;"><span class="area2">
+    switch set port lanx speed 10mhalf<br>
+    </span>
+    Possible speeds: 10mhalf or 100mfull or auto<br><br></div>
+    <div class="title"><div style="color: red">
+    VOICE</div>
+    <div class="title" onClick="showhide('RG613/646/656__sect16.a');">Check Provisioning</div>
+    <div class="area1" id="RG613/646/656__sect16.a" style="display:none;"><span class="area2">
+    voip mgcp protocol show
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect16.b');">Check what G6 is is pointing to</div>
+    <div class="area1" id="RG613/646/656__sect16.b" style="display:none;">
+    RSVL G6 = 172.21.<b>240</b>.135<br>
+    NHLD G6 = 172.21.<b>254</b>.135<br><br>
+    <span class="area2">
+    voip mgcp callagent list
+    </span>
+    <br><br></div>
+    <div  onClick="showhide('RG613/646/656__sect16');">Create a Voice Port for Provisioning</div>
+    </div>
+    <div class="area1" id="RG613/646/656__sect16" style="display:none;"><span class="area2">
+    voip mgcp protocol enable<br>
+    voip mgcp protocol set netinterface ip0<br>
+    voip mgcp protocol set profile ags<br>
+    voip mgcp callagent create imerge contact x.x.x.x	(xxx.xxx.xxx.xxx = iMerge IP Address)<br>
+    voip ep analogue create tel1 type al-fxs-del physical-port tel1	(x = Port ID)<br>
+    voip ep analogue enable tel1	(x = Port ID)<br>
+    voip ep analogue set tel1 vad off	(x = Port ID)<br>
+    voip ep analogue set tel1 country usa	(x = Port ID)<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect16.1');">Deprovision all MGCP lines on an RG</div>
+    <div class="area1" id="RG613/646/656__sect16.1" style="display:none;"><span class="area2">
+    voip mgcp protocol disable<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect17');">Change Gain Setting</div>
+    <div class="area1" id="RG613/646/656__sect17" style="display:none;"><span class="area2">
+    voip ep analogue set tel1 rxgain<br>
+    voip ep analogue set tel1 txgain<br>
+    </span>
+    Telephony sets these to -6 for RG 613 & 656, -9 for the 646<br>
+    txgain: far end echo<br>
+    rxgain: near end echo
+    <br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect18');">Check Tel port provisioning (MGCP & SIP)</div>
+    <div class="area1" id="RG613/646/656__sect18" style="display:none;"><span class="area2">
+    voip ep analogue show tel1
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect18.5');">Checking if calls ring to RG</div>
+    <div class="area1" id="RG613/646/656__sect18.5" style="display:none;"><span class="area2">
+    c e ati<br>
+    tell mgcp enable debug=packet<br>
+    </span>
+    c e ati switches from CLI to console mode - type exit to return<br>
+    Place a test call - it should display something along these lines<br>
+    "mgcp.nif: Incoming packet - time: Wed May 27 12:52:53 1970"<br>
+    "dlcx 25517124 aal/0@[10.254.28.32] MGCP 1.0 NCS 1.0"<br>
+    "EOF>"<br>
+    if you get nothing then the RG is not getting the ring<br>
+    When done you will need to disable debug mode and exit console mode with:<br>
+    <span class="area2">
+    tell mgcp disable debug=packet<br>
+    exit
+    </span>
+    <br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect19');"><div style="color: red">
+    DPS</div>
+    Checking SIP Call Agent
+    </div>
+    <div class="area1" id="RG613/646/656__sect19" style="display:none;"><span class="area2">
+    voip sip proxyserver list
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect20');">Check what number is assigned to a Tel Port (DPS)</div>
+    <div class="area1" id="RG613/646/656__sect20" style="display:none;"><span class="area2">
+    voip sip user show u#<br>
+    </span>
+    U1=Tel1 U2=Tel2
+    <br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect20.1');">Deprovision all SIP lines on an RG</div>
+    <div class="area1" id="RG613/646/656__sect20.1" style="display:none;"><span class="area2">
+    voip sip protocol disable<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect20.2');">Deprovision a SIP line one port at a time on an RG</div>
+    <div class="area1" id="RG613/646/656__sect20.2" style="display:none;"><span class="area2">
+    voip sip user delete u#<br>
+    voip ep analogue delete tel#<br>
+    system config create dhcpconf.cfg<br>
+    system config set dhcpconf.cfg<br>
+    </span><br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect21');">Change Gain Setting</div>
+    <div class="area1" id="RG613/646/656__sect21" style="display:none;"><span class="area2">
+    voip ep analogue set tel1 rxgain -6<br>
+    voip ep analogue set tel1 txgain -6<br>
+    </span>
+    Telephony sets these to -6 for RG 613 & 656, -9 for the 646<br>
+    txgain: far end echo<br>
+    rxgain: near end echo
+    <br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect22');">Checking if calls ring to RG</div>
+    <div class="area1" id="RG613/646/656__sect22" style="display:none;"><span class="area2">
+    c e ati<br>
+    tell sip enable debug=packet<br>
+    </span>
+    c e ati switches from CLI to console mode - type exit to return<br>
+    Place a test call - it should display something along these lines<br><br>
+    "sip.nif: Incoming packet - time: Wed Mar 04 13:02:27 2009"<br>
+    "ACK sip:+19163594444@10.237.20.67:5060 SIP/2.0"<br>
+    "Call-ID: LU-1236200547368987@dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com"<br>
+    "bunch more info here (that's right, bunch is the technical term for it)"<br>
+    <br>
+    if you get nothing then the RG is not getting the ring<br>
+    When done you will need to disable debug mode and exit console mode with:<br>
+    <span class="area2">
+    tell sip disable debug=packet<br>
+    exit
+    </span>
+    <br><br></div>
+    <div class="title" onClick="showhide('RG613/646/656__sect23');">Special Reboot</div>
+    <div class="area1" id="RG613/646/656__sect23" style="display:none;"><br>
+    Call hitting RG but no dial tone. In some cases, a special reboot is able to restore dial tone.<br>
+    <ol>
+      <li>Telnet to the RG and put in the command<br> 
+          <span class="area2">c e ati</span><br>
+          <span class="area2">tell sip enable debug=packet</span><br>
+      <li>Make a test call to the phone number and check you have the SIP INVITE and Ringing messages only<br>
+    <pre>
+    ++++++++++++++++++++
+    sip.nif: Incoming packet - time: Wed Oct 24 13:14:49 2012
+    <span class="redtext">INVITE</span> sip:+19166443433@10.252.13.6:5060 SIP/2.0
+    User-Agent: ATI-iMG726MOD/3-8-02_25
+    Via: SIP/2.0/UDP 172.21.252.16:5060;branch=z9hG4bKe95fbea41de36c5cc0b245acb37ddf225075f87d-1351109689224293
+    From: "SWtestline" <sip:+19167497077@fs.surewest.com;user=phone>;tag=5075f881-1351109689179344lucentNGFS-021210
+    To: <sip:+19166443433@fs.surewest.com>
+    Call-ID: LU-1351109689179332@dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com
+    CSeq: 1 INVITE
+    Contact: <sip:dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com:5060>
+    Max-Forwards: 68
+    Supported: 100rel
+    Content-Length: 179
+    Content-Type: application/sdp
+    P-Asserted-Identity: "SWtestline" <sip:+19167497077@fs.surewest.com>
+    Allow: INVITE,BYE,REGISTER,ACK,OPTIONS,CANCEL,SUBSCRIBE,NOTIFY,PRACK,INFO,REFER,UPDATE
+    Request-Disposition: no-fork
+    Record-Route: <sip:pcsf-stdn.imsgroup0-000.swfs1.fs.surewest.com:5060;lr;lsstag=pt-2523-2523>
+    P-Called-Party-ID: <sip:+19166443433@fs.surewest.com;user=phone>
+    
+    v=0
+    o=LucentFS5000 895217605 895217605 IN IP4 10.236.0.241
+    s=-
+    c=IN IP4 10.236.0.241
+    t=0 0
+    m=audio 50620 RTP/AVP 0 13
+    a=rtpmap:0 PCMU/8000
+    a=rtpmap:13 CN/8000
+    a=sendrecv
+    <EOF>
+    
+    
+    --------------
+    sip.ua.AADJ6QAN2gR4kwxx: Outgoing packet - time: Wed Oct 24 13:14:49 2012
+    <span class="redtext">SIP/2.0 180 Ringing</span>
+    User-Agent: ATI-iMG646BD-ON/2-5_55_10_61
+    Via: SIP/2.0/UDP 172.21.252.16:5060;branch=z9hG4bKe95fbea41de36c5cc0b245acb37ddf225075f87d-1351109689224293
+    From: SWtestline <sip:+19167497077@fs.surewest.com;user=phone>;tag=5075f881-1351109689179344lucentNGFS-021210
+    To: <sip:+19166443433@fs.surewest.com>;tag=AADJ6QAN2gR4kwxx
+    Call-ID: LU-1351109689179332@dtas-stdn.fsimsgroup0-000.swfs1.fs.surewest.com
+    CSeq: 1 INVITE
+    Contact: <sip:+19166443433@10.252.13.6:5060>
+    Supported: 100rel,replaces,timer
+    Content-Length: 0
+    
+    <EOF></pre>
+      <li>Hang up then put in this command:<br> 
+      <span class="area2">restart</span> 
+      <li>Do a continuous ping on the ip and when it is pingable and telnet to RG and check whether the line is registered: voip sip user show u1
+      <li>Call the number again to see someone at home or the answering machine. If still ring no answer (only see INVITE and Ringing messages) then check phone and wiring
+    </ol>
+    </span><br><br></div>
+    
+    <div class="title" onClick="showhide('RG613/646/656__sect21');"></div>
+    <div class="area1" id="RG613/646/656__sect21" style="display:none;"><span class="area2">
+    </span><br><br></div>
+    
+    <div class="title" onClick="showhide('RG613/646/656__sect0');"></div>
+    <div class="area1" id="RG613/646/656__sect0" style="display:none;"><span class="area2">
+    </span><br><br></div></br></br>
+
+    <div class="Home__button">
+        <a href="#top">Back to top</a> 
+    </div></br></br>
+    
+    <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+    <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+    <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+    <img src="asteroid.png" height="50px" width="50px" alt="picture"><br><br>
+
+
+
+
+
+
+
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="asteroid.png" height="50px" width="50px" alt="picture"><br><br>
+
+
+<div class="Home__button">
+    <a href="#top">Back to top</a> 
+</div></br></br>
+
+<a name="RG2524"></a>
+
+<h1>RG 2524 Commands </h1>
+
+
+    <span class="Home__button"><a[Documentation.CFNOC.CA.putty NMS]</a></span>
+        {image:disk1.png|width=50}
+        {image:disk1.png|width=50}
+        {image:disk1.png|width=50}
+        {image:asteroid.png|width=50}</br></br>                      
+
+
+  <div class="title" onClick="showhide('RG2524__sect0');">Show RG Power/Battery Status</div>
+  <div class="area1" id="RG2524__sect0" style="display:none;"><span class="area2">
+  show system psu
+  </span>
+  <div class="cmd"><pre>
+  <b>show system psu</b>
+  System PSU Status
+  PSU Managment System    : running
+
+  Alarm Status:
+  PSU Battery Missing     : alarm present!
+  PSU Replace Battery     : OK
+  PSU Battery Low         : OK
+  PSU on Battery          : OK
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect1');">Show the MAC table</div>
+  <div class="area1" id="RG2524__sect1" style="display:none;"><span class="area2">
+  show mac address-table<br><br>
+  </span>
+  <div class="cmd"><pre>
+  <b>show mac address-table</b>
+  VLAN Port             mac             type
+  1    Port1.0.1        0025.f187.23b0  forward dynamic
+  1    Port1.0.1        0100.5e48.0101  forward static
+  1    Port1.0.2        90b1.3400.ed37  forward dynamic
+  1    Port1.0.2        0100.5e0a.6403  forward static
+  1    Port1.0.2        0100.5e48.0101  forward static
+  1    Port1.0.4        28c6.8e9a.ab50  forward dynamic
+  1    Port1.0.5        000f.8ff7.1aff  forward dynamic
+  </pre></div>
+  <br><br></div>
+
+
+
+  <div class="title" onClick="showhide('RG2524__sect2.1');">Checking LAN Port Ethernet Link (up/down)</div>
+  <div class="area1" id="RG2524__sect2.1" style="display:none;"><span class="area2">
+  show interface status
+  </span>
+  <div class="cmd"><pre>
+  show interface status
+  Port       Name               Status  Vlan Duplex   Speed Type
+  port1.0.1                     up         1 auto      auto N/A
+  port1.0.2                     up         1 auto      auto N/A
+  port1.0.3                     down       1 auto      auto N/A
+  port1.0.4                     up         1 auto      auto N/A
+  port1.0.5                     up         1 auto      auto N/A
+  hpna1.0.1                     down       1 auto      auto N/A
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect3');">Checking LAN Port Status</div>
+  <div class="area1" id="RG2524__sect3" style="display:none;"><span class="area2">
+  show interface<br><br>
+
+  to show only a specific port, use:<br> 
+  show interface port1.0.1<br>
+  show interface port1.0.2<br>
+  show interface port1.0.3<br>
+  show interface port1.0.4<br>
+  show interface port1.0.5<br>
+  </span>
+  <div class="cmd"><pre>
+  show interface port1.0.1
+  Interface port1.0.1
+    Link is UP, administrative state is UP
+    Address is 000d.da0e.6af6
+    Description:
+    index 1 mtu N/A
+    current duplex full, current speed 100, polarity N/A, flowcontrol both
+    configured duplex auto, configured speed auto
+    jumbo frame support is disabled
+    Protected switching mode is disabled
+    SNMP link-status traps: Disabled (Suppressed in 0 sec.)
+    Bandwidth Unknown
+      input packets 140442, bytes 65101962, dropped 0, multicast packets 92521
+      output packets 28829187, bytes 600410350, multicast packets 28648204 broadcast packets 59922
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect3.1');">Enable lan port</div>
+  <div class="area1" id="RG2524__sect3.1" style="display:none;"><span class="area2">
+  conf terminal<br>
+  interface port1.0.1<br>
+  no shutdown<br><br>
+  <div class="cmd"><pre>
+  awplus# conf terminal
+  awplus(config)# interface port1.0.1
+  awplus(config-if)# no shutdown </pre></div>
+  </span><br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect3.2');">Disable lan port</div>
+  <div class="area1" id="RG2524__sect3.2" style="display:none;"><span class="area2">
+  conf terminal<br>
+  interface port1.0.1<br>
+  shutdown<br><br>
+  <div class="cmd"><pre>
+  awplus# conf terminal
+  awplus(config)# interface port1.0.1
+  awplus(config-if)# shutdown </pre></div>
+  </span><br><br></div>
+
+
+  <div class="title" onClick="showhide('RG2524__sect3.25');">View / Set lan port speed</div>
+  <div class="area1" id="RG2524__sect3.25" style="display:none;"><span class="area2">
+  To view the current lan speed<br><br>
+  <span class="greencolor2">show mls qos interface port1.0.4</span><br><br>
+
+  To change the lan speed<br><br>
+
+  <span class="greencolor2">conf t<br>
+  interface port1.0.4<br>
+  egress-rate-limit 25000k<br>
+  ingress-rate-limit 5000k<br>
+  exit<br>
+  exit</span><br><br>
+
+  egress = download<br>
+  ingress = upload<br>
+  speeds can be specified by k, m, or g  (Kilobit, Megabit, Gigabit)<br><br>
+
+
+  <div class="cmd"><pre>
+  awplus# <span class="greencolor">show mls qos interface port1.0.4</span>
+  port1.0.4:
+    Trust mode: ................. CoS
+    Default CoS priority: ....... 0
+    Default queue: .............. 1
+    Number of egress queues: .... 4
+    <span class="orangecolor">Egress rate limit: .......... 0Kb
+    Ingress rate limit: ......... 0Kb</span>
+
+
+  awplus# <span class="greencolor">conf t</span>
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# <span class="greencolor">interface port1.0.4</span>
+  awplus(config-if)# <span class="greencolor">egress-rate-limit 25000k</span>
+  awplus(config-if)# <span class="greencolor">ingress-rate-limit 5000k</span>
+  awplus(config-if)# <span class="greencolor">ex</span>
+  awplus(config)# <span class="greencolor">ex</span>
+
+
+  awplus# <span class="greencolor">show mls qos interface port1.0.4</span>
+  port1.0.4:
+    Trust mode: ................. CoS
+    Default CoS priority: ....... 0
+    Default queue: .............. 1
+    Number of egress queues: .... 4
+    <span class="orangecolor">Egress rate limit: .......... 25000Kb
+    Ingress rate limit: ......... 5000Kb</span>
+
+
+  <span class="lightbluecolor">example using m for megabits</span>
+  awplus# conf t
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# interface port1.0.4
+  awplus(config-if)# egress-rate-limit <span class="orangecolor">25m</span>
+  awplus(config-if)# ingress-rate-limit <span class="orangecolor">5m</span>
+  awplus(config-if)# ex
+  awplus(config)# ex
+
+
+  awplus# show mls qos interface port1.0.4
+  port1.0.4:
+    Trust mode: ................. CoS
+    Default CoS priority: ....... 0
+    Default queue: .............. 1
+    Number of egress queues: .... 4
+    Egress rate limit: .......... <span class="orangecolor">25000Kb</span>
+    Ingress rate limit: ......... <span class="orangecolor">5000Kb</span>
+
+
+  <span class="lightbluecolor">To remove the limit, change the speed to 0</span>
+  awplus# conf t
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# interface port1.0.4
+  awplus(config-if)# <span class="orangecolor">egress-rate-limit 0</span>
+  awplus(config-if)# <span class="orangecolor">ingress-rate-limit 0</span>
+  awplus(config-if)# ex
+  awplus(config)# ex
+
+  awplus# show mls qos interface port1.0.4
+  port1.0.4:
+    Trust mode: ................. CoS
+    Default CoS priority: ....... 0
+    Default queue: .............. 1
+    Number of egress queues: .... 4
+    Egress rate limit: .......... <span class="orangecolor">0Kb</span>
+    Ingress rate limit: ......... <span class="orangecolor">0Kb</span>
+  </pre></div>
+  </span><br><br></div>
+
+
+
+  <div class="title" onClick="showhide('RG2524__sect3.3');">Show RG Port Counters/Errors</div>
+  <div class="area1" id="RG2524__sect3.3" style="display:none;"><span class="area2">
+  show platform port port1.0.1<br><br>
+  wan will be port 5<br>
+  show platform port port1.0.5<br><br>
+  <div class="cmd"><pre>
+  awplus# show platform port port1.0.2
+
+  Switch Port Counters
+  --------------------------------------------------------------------------------
+
+  Port 1.0.2     Ethernet MAC counters:
+  Combined receive/transmit packets by size (octets) counters:
+    64                            182 512 - 1023                     112
+    65 - 127                      194 1024 - MaxPktSz              12339
+    128 - 255                      44
+    256 - 511                     113
+
+  General counters:
+  Receive                         Transmit
+    Octets                   18314789 Octets                      640233
+    Pkts                        12984 Pkts                          1485
+    CRCErrors                       0
+    UnicastPkts                  1790 UnicastPkts                   1395
+    MulticastPkts                   0 MulticastPkts                   21
+    BroadcastPkts               11194 BroadcastPkts                   69
+    FlowCtrlFrms                    0 FlowCtrlFrms                     0
+    OversizePkts                    0
+    Fragments                       0
+    Jabbers                         0
+    UpsupportOpcode                 0
+    UndersizePkts                   0
+                                      Collisions                       0
+                                      LateCollisions                   0
+                                      ExcessivCollsns                  0
+  Miscellaneous counters:
+    MAC TxErr                       0
+    MAC RxErr                       0
+    Drop Events                     0
+
+  </pre></div>
+  </span><br><br></div>
+
+
+
+  <div class="title" onClick="showhide('RG2524__sect3.4');">Show RG Port Counters/Errors (More detailed)</div>
+  <div class="area1" id="RG2524__sect3.4" style="display:none;"><span class="area2">
+  debug<br>
+  sh<br>
+  mdkshell<br>
+  stat port long X<br><br>
+
+  X will be what port you want to view, but X starts at 0, not 1<br>
+  lan 1, X will be 0<br>
+  lan 2, X will be 1<br>
+  lan 3, X will be 2<br>
+  lan 4, X will be 3<br>
+  wan, X will be 4<br><br>
+  type "exit" 3 times to get back to normal RG prompt<br><br>
+  <div class="cmd"><pre>
+  awplus# <span class="greencolor">debug</span>
+
+
+  Welcome in the BCM CLI through the AWP CLI
+
+  BCM96816 Broadband Router
+  > <span class="greencolor">sh</span>
+
+
+  BusyBox v1.17.2 (2015-12-18 12:33:14 EST) built-in shell (ash)
+  Enter 'help' for a list of built-in commands.
+
+  # <span class="greencolor">mdkshell</span>
+  MDK.0> <span class="greencolor">stat port long 4</span>
+  Port 4 statistics:
+  Tx packets         16843891
+  Tx bytes          679735445
+  Tx errors                 0
+  Rx packets         33405050
+  Rx bytes         1951498653
+  Rx errors                 0
+  Rx drops                  0
+  atiTXOCTETSr                         4974703026
+  atiTXDROPPKTSr                                0
+  atiTXQOSPKTSr                          16255072
+  atiTXBROADCASTPKTSr                          30
+  atiTXMULTICASTPKTSr                       18546
+  atiTXUNICASTPKTSr                      16825319
+  atiTXCOLLISIONSr                              0
+  atiTXSINGLECOLLISIONr                         0
+  atiTXMULTIPLECOLLISIONr                       0
+  atiTXDEFERREDTRANSMITr                        0
+  atiTXLATECOLLISIONr                           0
+  atiTXEXCESSIVECOLLISIONr                      0
+  atiTXFRAMEINDISCr                             0
+  atiTXPAUSEPKTSr                               0
+  atiTXQOSOCTETSr                      4854136884
+  atiRXOCTETSr                        40606204667
+  atiRXUNDERSIZEPKTSr                           0
+  atiRXPAUSEPKTSr                               0
+  atiPKTS64OCTETSr                        4063139
+  atiPKTS65TO127OCTETSr                    828349
+  atiPKTS128TO255OCTETSr                  1273145
+  atiPKTS256TO511OCTETSr                   292260
+  atiPKTS512TO1023OCTETSr                  519965
+  atiPKTS1024TO1522OCTETSr               26428199
+  atiRXOVERSIZEPKTSr                            0
+  atiRXJABBERSr                                 0
+  atiRXALIGNMENTERRORSr                         0
+  atiRXFCSERRORSr                               0
+  atiRXGOODOCTETSr                    40606204947
+  atiRXDROPPKTSr                                0
+  atiRXUNICASTPKTSr                      29681097
+  atiRXMULTICASTPKTSr                       69860
+  atiRXBROADCASTPKTSr                     3654103
+  atiRXSACHANGESr                               1
+  atiRXFRAGMENTSr                               0
+  atiRXEXCESSSIZEDISCr                          0
+  atiRXSYMBOLERRORr                             0
+  atiRXQOSPKTSr                          33404936
+  atiRXQOSOCTETSr                     40606193939
+  atiPKTS1523TO2047r                            0
+  atiPKTS2048TO4095r                            0
+  atiPKTS4096TO8191r                            0
+  atiPKTS8192TO9728r                            0
+  MDK.0> <span class="greencolor">exit</span>
+  # <span class="greencolor">exit</span>
+  > <span class="greencolor">exit</span>
+
+  </pre></div>
+  </span><br><br></div>
+
+
+
+  <div class="title" onClick="showhide('RG2524__sect6.1');">Shows uptime</div>
+  <div class="area1" id="RG2524__sect6.1" style="display:none;"><span class="area2">
+  show system
+  </span>
+  <div class="cmd"><pre>
+  show system
+  Switch System Status                       Mon Jul  1 12:30:46 2013
+  Board     ID   Bay    Board Name               Rev    Serial Number
+  -------------------------------------------------------------------
+  Base                  iMG2524H                 J      A04462G130800247 J
+  -------------------------------------------------------------------
+  Memory: DRAM:  60036 kB  Used: 54264 kB  Available:  5772 kB
+  -------------------------------------------------------------------
+  Environmental Status : Normal
+  Uptime               : 3 days 01:16:55
+  Bootloader version   : AtiUboot-1.0_07
+  VoIP version         : AtiVoip-2.2.3_15
+
+  Current Software     : AT-iMG2500-4.2.3
+  Software version     : AtiBcm-4.2.3 GM
+  Build date           : 02:17 25/02/13
+
+  Current boot config  : dhcpconf.cfg (file exists)
+  Territory            :
+
+  System Name          :
+  System Contact       :
+  System Location      :
+  </pre></div>
+  <br><br></div>
+  <div class="title" onClick="showhide('RG2524__sect7');">Update time</div>
+  <div class="area1" id="RG2524__sect7" style="display:none;">
+  If the time is incorrect on an RG, there are 3 things you will need to check<br>
+  1.  Time Zone<br>
+  2.  Summer Time setting (for daylight savings time)<br>
+  3.  Time Servers<br><br>
+
+  The Summer Time setting will need to be set appropriately as shown below<br>
+  <b>Summer time: disabled</b> - Pacific Standard Time -- Begins in the fall<br>
+  <b>Summer time: enabled</b> - Pacific Daylight Time -- Begins in the spring<br><br>
+  <br><br>
+  <div class="cmd">
+  <pre>
+
+  <span class="redcolor">[View Time]</span>
+  <span class="greencolor">show clock</span>
+  Local Time: Tue, 06 Jan 1970 04:57:16 -08:00
+  UTC Time: Tue, 06 Jan 1970 12:57:16 +00:00
+  Timezone: PST
+  Timezone name: Pacific Time, Tijuana
+  Timezone offset: -08:00
+  Summer time: enabled
+  <span class="greencolor">show ntp status</span>
+  Clock not synchronized.
+  Polling time: 60 sec
+  Timeout: 5 sec
+  Maximum number of attempts: 3
+  <span class="redcolor">[Sync RG with the time server]</span>
+  <span class="greencolor">conf t
+  ntp sync
+  exit</span>
+  <span class="redcolor">[View Time Again]</span>
+  <span class="greencolor">show clock</span>
+  Local Time: Wed, 22 Mar 2017 13:55:28 -08:00
+  UTC Time: Wed, 22 Mar 2017 20:55:28 +00:00
+  Timezone: PST
+  Timezone name: Pacific Time, Tijuana
+  Timezone offset: -08:00
+  Summer time: enabled
+  <span class="greencolor">show ntp associations</span>
+  address
+  10.10.6.151
+  10.10.6.152
+
+  <span class="redcolor">[Set Timezone]</span>
+  <span class="greencolor">conf t
+  clock timezone PST
+  exit</span>
+
+
+  <span class="redcolor">[Enable day-light savings]</span>
+  <span class="greencolor">conf t
+  clock summer-time
+  exit</span>
+
+  <span class="redcolor">[Disable day-light savings]</span>
+  <span class="greencolor">conf t
+  no clock summer-time
+  exit</span>
+
+
+  <span class="redcolor">[Set NTP servers]</span>
+  <span class="greencolor">conf t
+  ntp peer 10.10.6.151
+  exit</span>
+  <span class="lightbluecolor">
+  --- The 2 time servers we use are listed below:
+  - Primary: 10.10.6.151
+  - Secondary: 10.10.6.152</span>
+
+  <span class="redcolor">[Or to remove servers]</span>
+  <span class="greencolor">conf t
+  no ntp peer 10.10.6.151
+  exit</span>
+  </pre>
+  </div><br><br></div>
+  <div class="title" onClick="showhide('RG2524__sect8');">Saving Settings</div>
+  <div class="area1" id="RG2524__sect8" style="display:none;"><span class="area2">
+  copy running-config startup-config
+  <div class="cmd"><pre>
+  awplus# copy running-config startup-config
+
+  Generating current configuration .....
+  </pre></div>
+  </span><br><br></div></br></br>
+
+
+  <div class="title"><div style="color: rgb(31, 11, 11)">
+  VIDEO</div>
+  <div  onClick="showhide('RG2524__sect12');">Check snooping config</div>
+  </div>
+  <div class="area1" id="RG2524__sect12" style="display:none;"><span class="area2">
+  show ip igmp
+  </span><br><br>
+  <div class="cmd"><pre>
+  <b>show ip igmp</b>
+  IGMP snooping is enabled for vlan1
+  IGMP proxy mode is enabled
+  IGMP Routed Proxy service is not enabled
+  IGMP version is 2
+  IGMP Max number of groups is 64
+  IGMP robustness variable is 3
+  IGMP query interval is 125 seconds
+  IGMP max query response time is 10 (1/10 seconds)
+  IGMP Last member query response interval is 10 (1/10 seconds)
+  IGMP snooping fast-leave is enabled
+  </pre></div>
+  <br><br></div></br></br>
+
+
+
+  <div class="title"><div style="color: rgb(37, 15, 15)">
+  VOICE</div>
+  <div  onClick="showhide('RG2524__sect16');">Check MGCP</div>
+  </div>
+  <div class="area1" id="RG2524__sect16" style="display:none;"><span class="area2">
+  sho mgcp<br><br>
+  </span>
+  <div class="cmd"><pre>
+  <b>sho mgcp</b>
+    Admin State DISABLED
+    Call agent:  0 service is UNKNOWN
+    Backup call agent:  0
+    Gateway Source Interface: vlan1
+    Gateway Port : 2427
+    DTMF-relay for VoIP is inband for all codec types
+    Tone detection is DISABLED
+    T.38 Fax is DISABLED
+    NTE payload type is DYNAMIC
+    RTP Payload type for nte is 97
+    RTP precedence:  0
+    RTP discard on unknown remote is DISABLED
+    RTP discard on mismatched source is ENABLED
+    RTCP DISABLED
+    Piggyback msg ENABLED
+    Heartbeat message is: DISABLED
+    Heartbeat master port is *
+    Rsip-range use is : INDIVIDUAL
+    Request timeout: 20 seconds
+    Request retries: 7
+    Signaling precedence: 0
+    Domain: [$IP]
+    Package capability:
+    Endpoint offset is DISABLED
+    Endpoints: tel1 port: tel1 Admin State ENABLED Oper State Up Call State Idle
+    Endpoints: tel2 port: tel2 Admin State DISABLED Oper State Disabled Call State Idle
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect16.1');">Check SIP</div>
+  <div class="area1" id="RG2524__sect16.1" style="display:none;"><span class="area2">
+  show sip<br><br>
+  </span>
+
+  <div class="cmd"><pre>
+  show sip
+    SIP is Enabled
+  </pre></div>
+  <br><br></div>
+
+
+  <div class="title" onClick="showhide('RG2524__sect16.2');">Check if call is registered</div>
+  <div class="area1" id="RG2524__sect16.2" style="display:none;"><span class="area2">
+  show sip-ua<br><br>
+  </span>
+
+  <div class="cmd"><pre>
+  show sip-ua
+    Admin State ENABLED
+    registrar: not configured
+    secondary registrar :  not configured
+    sip-server: pcsf-stdn.imsgroup0-001.swfs1.fs.surewest.com 5060 (active)
+    secondary sip-server : not configured
+    sip-server behavior : Lucent
+    Source Interface: vlan1
+    Local host is : fs.surewest.com
+    Sip User Port : 5060
+    dtmf-relay for VoIP is inband for all codec types
+    tone detection is DISABLED
+    T.38 Fax is DISABLED
+    rtp Payload type for nte is 97
+    rtp precedence:  0
+    rtp discard on unknown remote is DISABLED
+    rtp discard on mismatched source is ENABLED
+    rtcp is DISABLED
+    authentication : proxy, www
+    subscribe        : ENABLED
+    subscribe method : Default
+    signaling precedence is 0
+    Hair pinning of signaling is disabled
+    100rel support is enabled
+    User Agents: 1 port: tel1 Admin State ENABLED Oper State Up Call State Idle
+    User Agents: 2 port: tel2 Admin State DISABLED Oper State Disabled Call State Idle
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect17');">Check Gain Setting</div>
+  <div class="area1" id="RG2524__sect17" style="display:none;"><span class="area2">
+  show voice port tel1<br><br>
+  </span>
+  <div class="cmd"><pre>
+  <b>show voice port tel1</b>
+
+  Type of VoicePort is FXS
+  Operation State is Up
+  Administrative State is Enabled
+  Call state is Idle
+  Country is US
+  Line input gain is -6 dB
+  Line output attenuation is 0 dB
+  Echo cancellation is Enabled
+  Playout delay mode is Fixed
+  Playout delay is 60 ms
+  Hook flash in timing is 950 ms
+  Off Hook Input 250 ms
+  On Hook Input 1000 ms
+  Off hook to first digit timeout range is 0-16000 ms
+  Interdigit timeout range is 0-4000 ms
+  Ringing interval is 180 seconds
+  Dial mode is DTMF
+  Disconnect Supervision (OSI) is Enabled
+  Caller ID type 1 (on-hook) is Enabled
+  Caller ID type 2 (call waiting) is Enabled
+  Caller ID signal is None
+  Caller ID standard is Bellcore
+  Caller ID mechanism is FSK
+  Caller ID alerting time is During Ring
+  Caller ID Blocking is Disabled
+  Call Waiting is Enabled
+    Call Waiting is Active
+  Call Forward Unconditional is Disabled
+  Call Forward Busy is Disabled
+  Call Forward No Answer is Disabled
+    Number of rings before No-Answer is declared is 3
+  Warmline is Disabled
+  Call Forward External is Disabled
+  Supplementary Service Prefix is Disabled
+  Call Hold is Enabled
+  Visual Message Waiting Indicator transmission is Enabled
+  Conference Call is Disabled
+  Blind Call Transfer is Disabled
+  Consulted Call Transfer is Disabled
+
+  Priority   Codec name       Status      Vad Status  Packetization
+  ------------------------------------------------------------------
+  Low        G.711MuLaw       Enabled     Disabled    10,20,30
+  Low        G.711ALaw        Disabled    Disabled    10,20,30
+  Low        G.726            Disabled    Disabled    10,20,30
+  Low        G.729            Disabled    Disabled    10,20,30
+  </pre></div>
+  <br><br></div>
+  <div class="title" onClick="showhide('RG2524__sect17.5');">Change Gain Setting</div>
+  <div class="area1" id="RG2524__sect17.5" style="display:none;"><span class="area2">
+  conf t<br>
+  voice-port tel1<br>
+  input gain -9<br>
+  output attenuation -3<br>
+  exit<br>
+  exit<br>
+  <br><br>
+  </span>
+  <div class="cmd"><pre>
+  awplus#<span class="greencolor">show voice port tel1</span>
+  Type of VoicePort is FXS
+  Operation State is Up
+  Administrative State is Enabled
+  Call state is Idle
+  Country is US
+  <span class="redcolor">Line input gain is -6 dB</span>
+  <span class="redcolor">Line output attenuation is 0 dB</span>
+  Echo cancellation is Enabled
+  Playout delay mode is Fixed
+  Playout delay is 60 ms
+  Hook flash in timing is 950 ms
+  Off Hook Input 250 ms
+  On Hook Input 1000 ms
+  Off hook to first digit timeout range is 0-16000 ms
+  Interdigit timeout range is 0-4000 ms
+  Ringing interval is 180 seconds
+  Dial mode is DTMF
+  Disconnect Supervision (OSI) is Enabled
+  Caller ID type 1 (on-hook) is Enabled
+  Caller ID type 2 (call waiting) is Enabled
+  Caller ID signal is None
+  Caller ID standard is Bellcore
+  Caller ID mechanism is FSK
+  Caller ID alerting time is During Ring
+  Caller ID Blocking is Disabled
+  Call Waiting is Enabled
+    Call Waiting is Active
+  Call Forward Unconditional is Disabled
+  Call Forward Busy is Disabled
+  Call Forward No Answer is Disabled
+    Number of rings before No-Answer is declared is 3
+  Warmline is Disabled
+  Call Forward External is Disabled
+  Supplementary Service Prefix is Disabled
+  Call Hold is Enabled
+  Visual Message Waiting Indicator transmission is Enabled
+  Conference Call is Disabled
+  Blind Call Transfer is Disabled
+  Consulted Call Transfer is Disabled
+
+  Priority   Codec name       Status      Vad Status  Packetization
+  ------------------------------------------------------------------
+  Low        G.711MuLaw       Enabled     Disabled    10,20,30
+  Low        G.711ALaw        Disabled    Disabled    10,20,30
+  Low        G.726            Disabled    Disabled    10,20,30
+  Low        G.729            Disabled    Disabled    10,20,30
+
+
+
+
+
+  awplus# <span class="greencolor">conf t</span>
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# <span class="greencolor">voice-port tel1</span>
+  awplus(config-voiceport)# <span class="greencolor">input gain -9</span>
+  awplus(config-voiceport)# <span class="greencolor">output attenuation -3</span>
+  awplus(config-voiceport)# <span class="greencolor">exit</span>
+  awplus(config)# <span class="greencolor">exit</span>
+
+
+
+  awplus# <span class="greencolor">show voice port tel1</span>
+  Type of VoicePort is FXS
+  Operation State is Up
+  Administrative State is Enabled
+  Call state is Idle
+  Country is US
+  <span class="redcolor">Line input gain is -9 dB
+  Line output attenuation is -3 dB</span>
+  Echo cancellation is Enabled
+  Playout delay mode is Fixed
+  Playout delay is 60 ms
+  Hook flash in timing is 950 ms
+  Off Hook Input 250 ms
+  On Hook Input 1000 ms
+  Off hook to first digit timeout range is 0-16000 ms
+  Interdigit timeout range is 0-4000 ms
+  Ringing interval is 180 seconds
+  Dial mode is DTMF
+  Disconnect Supervision (OSI) is Enabled
+  Caller ID type 1 (on-hook) is Enabled
+  Caller ID type 2 (call waiting) is Enabled
+  Caller ID signal is None
+  Caller ID standard is Bellcore
+  Caller ID mechanism is FSK
+  Caller ID alerting time is During Ring
+  Caller ID Blocking is Disabled
+  Call Waiting is Enabled
+    Call Waiting is Active
+  Call Forward Unconditional is Disabled
+  Call Forward Busy is Disabled
+  Call Forward No Answer is Disabled
+    Number of rings before No-Answer is declared is 3
+  Warmline is Disabled
+  Call Forward External is Disabled
+  Supplementary Service Prefix is Disabled
+  Call Hold is Enabled
+  Visual Message Waiting Indicator transmission is Enabled
+  Conference Call is Disabled
+  Blind Call Transfer is Disabled
+  Consulted Call Transfer is Disabled
+
+  Priority   Codec name       Status      Vad Status  Packetization
+  ------------------------------------------------------------------
+  Low        G.711MuLaw       Enabled     Disabled    10,20,30
+  Low        G.711ALaw        Disabled    Disabled    10,20,30
+  Low        G.726            Disabled    Disabled    10,20,30
+  Low        G.729            Disabled    Disabled    10,20,30
+
+  </pre></div>
+  <br><br></div>
+
+
+  <div class="title" onClick="showhide('RG2524__sect17.2');">Update digit map </div>
+  <div class="area1" id="RG2524__sect17.2" style="display:none;"><span class="area2">
+  config term<br>
+  dial-peer voice 3 voip<br> 
+  destination-pattern [2-9]11|[2-9]xxxxxxxxx|1[2-9]xxxxxxxxx|*xx.[#T]|xx.[#*T]|*74[2-9]*x.[#T]|*xx*xx.[#T]<br> 
+  exit<br>
+  exit<br> 
+  write<br><br>
+  </span>
+
+  <div class="cmd" style="width: 1000px"><pre>
+
+  awplus# <span class="greencolor">conf t</span>
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# <span class="greencolor">dial-peer voice 3 voip</span>
+  awplus(config-dial-peer)# <span class="greencolor">destination-pattern [2-9]11|[2-9]xxxxxxxxx|1[2-9]xxxxxxxxx|*xx.[#T]|xx.[#*T]|*74[2-9]*x.[#T]|*xx*xx.[#T]</span>
+  awplus(config-dial-peer)# <span class="greencolor">exit</span>
+  awplus(config)# <span class="greencolor">exit</span>
+  awplus# <span class="greencolor">write</span>
+
+  Generating current configuration .....
+
+  </pre></div>
+  <br><br></div>
+  <div class="title" onClick="showhide('RG2524__sect18');">Check if Calls are hitting the RG</div>
+  <div class="area1" id="RG2524__sect18" style="display:none;"><span class="area2">
+  conf t<br>
+  no debug voip<br>
+  debug voip category aep<br>
+  debug voip category sip msg<br>
+  debug voip verbosity high<br>
+  debug voip level debug<br>
+  do terminal monitor<br>
+  <br><br>
+  </span>
+  <div class="cmd" style="width: 2000px"><pre>
+  awplus# <span class="greencolor">conf t</span>
+  Enter configuration commands, one per line.  End with CNTL/Z.
+  awplus(config)# <span class="greencolor">no debug voip</span>
+  awplus(config)# <span class="greencolor">debug voip category aep</span>
+  awplus(config)# <span class="greencolor">debug voip category sip msg</span>
+  awplus(config)# <span class="greencolor">debug voip verbosity high</span>
+  awplus(config)# <span class="greencolor">debug voip level debug</span>
+  awplus(config)# <span class="greencolor">do terminal monitor</span>
+  awplus(config)# Dec 19 07:40:14 (none) user.info awp_cli: User manager executed "debug voip category sip msg". Returned CPARSER_OK. 121
+  Dec 19 07:40:14 (none) user.info awp_cli: User manager executed "debug voip verbosity high". Returned CPARSER_OK. 119
+  Dec 19 07:40:14 (none) user.info awp_cli: User manager executed "debug voip level debug". Returned CPARSER_OK. 116
+  Dec 19 07:40:38 (none) user.info syslog: 792.353:Fnif_processPDU:1252:0000792261 sip_nif    SIP      Message  - Incoming Msg - Mon Dec 19 07:40:38 2016  ------------------------------------- INVITE sip:+19167971315@10.241.48.89:5060 SIP/2.0^M Via: SIP/2.0/UDP 172.21.25 275
+  Dec 19 07:40:38 (none) user.debug syslog: 792.431:Faep_getClipMethod:338:0000792431 aep_tel1_s AEP      Ignore   - return - Eaep_cliBELL_GR_30_CORE (1) 157
+  Dec 19 07:40:38 (none) user.debug syslog: 792.432:Faep_locSignalReq:4621:0000792432 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetCAI (0x01) 157
+  Dec 19 07:40:38 (none) user.info syslog: 792.459:Faep_fxs_delSignalReq:2156:0000792459 aep_tel1   AEP      Ignore   - tel1  --> Ring (9) 142
+  Dec 19 07:40:38 (none) user.debug syslog: 792.460:Faep_locSignalReq:4621:0000792460 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetFSK (0x01) 157
+  Dec 19 07:40:38 (none) user.info syslog: 792.460:Faep_fxs_delSignalReq:2259:0000792460 aep_tel1   AEP      Ignore   - tel1  --> FSK Caller Id (9) 151
+  Dec 19 07:40:38 (none) user.debug syslog: 792.460:Faep_getClipMethod:338:0000792460 aep_tel1   AEP      Ignore   - return - Eaep_cliBELL_GR_30_CORE (1) 157
+  Dec 19 07:40:38 (none) user.debug syslog: 792.461:Faep_getClipMethod:338:0000792461 aep_tel1   AEP      Ignore   - return - Eaep_cliBELL_GR_30_CORE (1) 157
+  Dec 19 07:40:38 (none) user.info syslog: 792.461:Faep_openCLIP:163:0000792461 aep_tel1   AEP      Ignore   - Called Number pre subs:O 139
+  Dec 19 07:40:38 (none) user.info syslog: 792.462:Faep_openCLIP:187:0000792462 aep_tel1   AEP      Ignore   - Called Number post subs:O 140
+  Dec 19 07:40:38 (none) user.info syslog: 792.471:Fsip_sendNIF:427:0000792471 sip_ua_8EF SIP      Message  - Outgoing Msg - Mon Dec 19 07:40:38 2016  ------------------------------------- SIP/2.0 180 Ringing^M User-Agent: ATI-iMG2524H/AtiVoip-2.3.3.2_02^M Via: SIP/2.0/UD 276
+  Dec 19 07:40:38 (none) user.info syslog: 792.530:Faep_cv2drv_aeDRV:233:0000792530 aep_tel1   AEP      Ignore   - CAI - CONVERT(aep): d.u.any_enum=1 TO(drv): dae.u.any=1 174
+  Dec 19 07:40:38 (none) user.debug syslog: 792.530:Faep_fxs_delSignalReq:2283:0000792530 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_0 - new: Eaep_fsmsFSM2_1 192
+  Dec 19 07:40:40 (none) user.debug syslog: 794.660:Faep_locControlInd:180:0000794660 aep_tel1   AEP      Ignore   - Faep_locControlInd Param Id: Eaep_cpidOpComplete id=12 175
+  Dec 19 07:40:40 (none) user.debug syslog: 794.661:Faep_fxs_delControlInd:342:0000794661 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_1 - new: Eaep_fsmsFSM2_1 192
+  Dec 19 07:40:42 (none) user.debug syslog: 795.974:Faep_locEventInd:488:0000795974 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetIDTimer (0x01) 159
+  Dec 19 07:40:42 (none) user.debug syslog: 795.975:Faep_fxs_delEventInd:1639:0000795975 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_1 - new: Eaep_fsmsFSM2_1 191
+  Dec 19 07:40:42 (none) user.debug syslog: 796.673:Faep_locControlInd:180:0000796673 aep_tel1   AEP      Ignore   - Faep_locControlInd Param Id: Eaep_cpidOpComplete id=12 175
+  Dec 19 07:40:42 (none) user.debug syslog: 796.674:Faep_fxs_delControlInd:342:0000796674 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_1 - new: Eaep_fsmsFSM2_1 192
+  Dec 19 07:40:45 (none) user.debug syslog: 799.328:Faep_locEventInd:488:0000799328 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetIDTimer (0x01) 159
+  Dec 19 07:40:45 (none) user.info syslog: 799.330:Faep_cv2drv_aeDRV:233:0000799330 aep_tel1   AEP      Ignore   - CAI - CONVERT(aep): d.u.any_enum=1 TO(drv): dae.u.any=1 174
+  Dec 19 07:40:45 (none) user.debug syslog: 799.331:Faep_fxs_delEventInd:1639:0000799331 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_1 - new: Eaep_fsmsFSM2_4 191
+  Dec 19 07:40:46 (none) user.notice syslog: 800.042:Faep_toEVR:850:0000800042 aep_tel1   AEP      Ignore   - qual off hook at 800042 137
+  Dec 19 07:40:46 (none) user.debug syslog: 800.043:Faep_locEventInd:488:0000800043 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetLoop (0x01) 156
+  Dec 19 07:40:46 (none) user.info syslog: 800.044:Faep_fxs_delEventInd:1750:0000800044 aep_tel1   AEP      Ignore   - tel1 --> Off-Hook (13) 145
+  Dec 19 07:40:46 (none) user.info syslog: 800.044:Faep_fxs_delEventInd:1763:0000800044 aep_tel1   AEP      Ignore   - tel1 --> Sending Off-Hook to DRV 155
+  Dec 19 07:40:46 (none) user.info syslog: 800.045:Faep_fxs_delEventInd:1793:0000800045 aep_tel1   AEP      Ignore   - tel1 --> Set active digitmap to '[2-9]11|[2-9]xxxxxx|1[2-9]xxxxxxxxx|*xx.[#T]|xx.[#*T]|*74[2-9]*x.[#T]|*xx*xx.[#T]' 238
+  Dec 19 07:40:46 (none) user.debug syslog: 800.047:Faep_fxs_delEventInd:1850:0000800047 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_4 - new: Eaep_fsmsFSM2_2 191
+  Dec 19 07:40:46 (none) user.debug syslog: 800.049:Faep_locControlReq:224:0000800049 aep_tel1   AEP      Ignore   - Faep_locControlReq Param Id: Eaep_cpidEvEnable id=9 172
+  Dec 19 07:40:46 (none) user.debug syslog: 800.050:Faep_locControlReq:224:0000800050 aep_tel1   AEP      Ignore   - Faep_locControlReq Param Id: Eaep_cpidVADinhibit id=17 175
+  Dec 19 07:40:46 (none) user.info syslog: 800.079:Fsip_sendNIF:427:0000800079 sip_ua_8EF SIP      Message  - Outgoing Msg - Mon Dec 19 07:40:46 2016  ------------------------------------- SIP/2.0 200 OK^M User-Agent: ATI-iMG2524H/AtiVoip-2.3.3.2_02^M Via: SIP/2.0/UDP 172 276
+  Dec 19 07:40:46 (none) user.info syslog: 800.328:Fnif_processPDU:1252:0000800328 sip_nif    SIP      Message  - Incoming Msg - Mon Dec 19 07:40:46 2016  ------------------------------------- ACK sip:+19167971315@10.241.48.89:5060 SIP/2.0^M Via: SIP/2.0/UDP 172.21.252.1 275
+  Dec 19 07:41:02 (none) user.debug syslog: 816.052:Faep_locEventInd:488:0000816052 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetIDTimer (0x01) 159
+  Dec 19 07:41:15 (none) user.debug syslog: 829.465:Faep_locEventInd:488:0000829465 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetLoop (0x02) 156
+  Dec 19 07:41:15 (none) user.info syslog: 829.466:Faep_fxs_delEventInd:1871:0000829466 aep_tel1   AEP      Ignore   - tel1  --> On-Hook (11) 145
+  Dec 19 07:41:15 (none) user.debug syslog: 829.466:Faep_fxs_hotline:2749:0000829466 aep_tel1   AEP      Ignore   - (0x7cdff120) Hotline is NOT configured 158
+  Dec 19 07:41:15 (none) user.info syslog: 829.466:Faep_resetUserDialedActions:3431:0000829466 aep_tel1   AEP      Ignore   - d->CLIR.UserActionPerCall reset to Eaep_facAct_None 181
+  Dec 19 07:41:15 (none) user.info syslog: 829.466:Faep_resetUserDialedActions:3434:0000829466 aep_tel1   AEP      Ignore   - d->CWT.UserActionPerCall reset to Eaep_facAct_None 180
+  Dec 19 07:41:15 (none) user.info syslog: 829.467:Faep_fxs_delEventInd:1893:0000829467 aep_tel1   AEP      Ignore   - tel1  --> Send On-Hook to DRV 152
+  Dec 19 07:41:15 (none) user.debug syslog: 829.467:Faep_fxs_delEventInd:1931:0000829467 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_2 - new: Eaep_fsmsFSM2_0 191
+  Dec 19 07:41:15 (none) user.debug syslog: 829.468:Faep_locControlReq:224:0000829468 aep_tel1   AEP      Ignore   - Faep_locControlReq Param Id: Eaep_cpidRestart id=14 172
+  Dec 19 07:41:15 (none) user.info syslog: 829.474:Fsip_sendNIF:427:0000829474 sip_ua_8EF SIP      Message  - Outgoing Msg - Mon Dec 19 07:41:15 2016  ------------------------------------- BYE sip:dtas-stdn.fsimsgroup0-001.swfs1.fs.surewest.com:5060 SIP/2.0^M User-Agent: 275
+  Dec 19 07:41:15 (none) user.debug syslog: 829.521:Faep_fxs_delControlReq:1126:0000829521 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_0 - new: Eaep_fsmsFSM2_0 193
+  Dec 19 07:41:15 (none) user.info syslog: 829.603:Fnif_processPDU:1252:0000829603 sip_nif    SIP      Message  - Incoming Msg - Mon Dec 19 07:41:15 2016  ------------------------------------- SIP/2.0 200 OK^M Call-ID: LU-148216203982326@dtas-stdn.fsimsgroup0-001.swfs1.f 275
+  Dec 19 07:41:19 (none) user.notice syslog: 833.816:Faep_toEVR:850:0000833816 aep_tel1   AEP      Ignore   - qual off hook at 833816 137
+  Dec 19 07:41:19 (none) user.debug syslog: 833.818:Faep_locEventInd:488:0000833818 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetLoop (0x01) 156
+  Dec 19 07:41:19 (none) user.info syslog: 833.818:Faep_fxs_delEventInd:1750:0000833818 aep_tel1   AEP      Ignore   - tel1 --> Off-Hook (9) 144
+  Dec 19 07:41:19 (none) user.info syslog: 833.818:Faep_fxs_delEventInd:1763:0000833818 aep_tel1   AEP      Ignore   - tel1 --> Sending Off-Hook to DRV 155
+  Dec 19 07:41:19 (none) user.info syslog: 833.819:Faep_fxs_delEventInd:1793:0000833819 aep_tel1   AEP      Ignore   - tel1 --> Set active digitmap to '[2-9]11|[2-9]xxxxxx|1[2-9]xxxxxxxxx|*xx.[#T]|xx.[#*T]|*74[2-9]*x.[#T]|*xx*xx.[#T]' 238
+  Dec 19 07:41:19 (none) user.debug syslog: 833.819:Faep_fxs_hotline:2749:0000833819 aep_tel1   AEP      Ignore   - (0x7cdff120) Hotline is NOT configured 158
+  Dec 19 07:41:19 (none) user.info syslog: 833.820:Faep_fxs_delEventInd:1815:0000833820 aep_tel1   AEP      Ignore   - tel1  --> Reset  TxGain to 0 151
+  Dec 19 07:41:19 (none) user.debug syslog: 833.821:Faep_fxs_delEventInd:1850:0000833821 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_0 - new: Eaep_fsmsFSM2_2 191
+  Dec 19 07:41:19 (none) user.debug syslog: 833.823:Faep_locControlReq:224:0000833823 aep_tel1   AEP      Ignore   - Faep_locControlReq Param Id: Eaep_cpidEnFaxModemToneDetector id=24 187
+  Dec 19 07:41:20 (none) user.debug syslog: 833.824:Faep_locSignalReq:4621:0000833824 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetTone (0x0A) 158
+  Dec 19 07:41:20 (none) user.info syslog: 833.824:Faep_fxs_delSignalReq:2576:0000833824 aep_tel1   AEP      Ignore   - tel1  --> Local Tone : Dial (11) 156
+  Dec 19 07:41:20 (none) user.info syslog: 833.824:Faep_cv2drv_aeDRV:343:0000833824 aep_tel1   AEP      Ignore   - TONE - CONVERT(aep): d.u.any_enum=10 TO(drv): dae.u.any=10 177
+  noDec 19 07:41:22 (none) user.debug syslog: 836.592:Faep_locEventInd:488:0000836592 aep_tel1   AEP      Ignore   - Analogue Element: Eaep_aetLoop (0x02) 156
+  Dec 19 07:41:22 (none) user.info syslog: 836.592:Faep_fxs_delEventInd:1871:0000836592 aep_tel1   AEP      Ignore   - tel1  --> On-Hook (11) 145
+  Dec 19 07:41:22 (none) user.debug syslog: 836.593:Faep_fxs_hotline:2749:0000836593 aep_tel1   AEP      Ignore   - (0x7cdff120) Hotline is NOT configured 158
+  Dec 19 07:41:22 (none) user.info syslog: 836.593:Faep_resetUserDialedActions:3431:0000836593 aep_tel1   AEP      Ignore   - d->CLIR.UserActionPerCall reset to Eaep_facAct_None 181
+  Dec 19 07:41:22 (none) user.info syslog: 836.593:Faep_resetUserDialedActions:3434:0000836593 aep_tel1   AEP      Ignore   - d->CWT.UserActionPerCall reset to Eaep_facAct_None 180
+  Dec 19 07:41:22 (none) user.info syslog: 836.593:Faep_fxs_delEventInd:1893:0000836593 aep_tel1   AEP      Ignore   - tel1  --> Send On-Hook to DRV 152
+  Dec 19 07:41:22 (none) user.debug syslog: 836.603:Faep_fxs_delEventInd:1931:0000836603 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_2 - new: Eaep_fsmsFSM2_0 191
+  Dec 19 07:41:22 (none) user.debug syslog: 836.603:Faep_locControlReq:224:0000836603 aep_tel1   AEP      Ignore   - Faep_locControlReq Param Id: Eaep_cpidRestart id=14 172
+  Dec 19 07:41:22 (none) user.debug syslog: 836.659:Faep_fxs_delControlReq:1126:0000836659 aep_tel1   AEP      Ignore   - aep_tel1: FSM status - prev: Eaep_fsmsFSM2_0 - new: Eaep_fsmsFSM2_0 193
+  <span class="greencolor">no debug voip</span>
+  awplus(config)# Mar 22 16:33:32 (none) user.info awp_cli: User manager executed "no debug voip". Returned CPARSER_OK. 107
+  <span class="greencolor">exit</span>
+  awplus# Mar 22 16:33:35 (none) user.info awp_cli: User manager executed "exit". Returned CPARSER_OK.  98
+  <span class="greencolor">terminal no monitor</span>
+
+
+  </pre></div><br><br>
+
+
+  [To disable debug]<br><br>
+  <span class="area2">
+  no debug voip<br>
+  exit<br>
+  terminal no monitor<br><br>
+
+  </span>
+  <br><br></div></br></br>
+  <div class="title" onClick="showhide('RG2524__sect19');"><div style="color: rgb(31, 15, 15)">
+  HCNA</div>
+  Show MAC's on HCNA
+  </div>
+  <div class="area1" id="RG2524__sect19" style="display:none;"><span class="area2">
+  show hpna stations<br><br>>
+  </span>
+  <div class="cmd"><pre>
+  <b>show hpna stations</b>
+  Idx MAC Address       Link Sync Master             Firmware Version HW Profile
+  === ================= ==== ==== ================== ================ ================
+  0   00:0d:da:0e:6a:f9 Yes  Yes  Yes (local device) CG3210H 1.9.4    Coax 12-44
+  1   00:25:f1:b8:7f:dd Yes  Yes  No                 CG3010H 1.9.4    Coax 12-28
+  2   74:f6:12:a3:da:85 Yes  Yes  No                 CG3010H 1.9.4    Coax 12-28
+  </pre></div>
+  <br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect20');">Show HCNA counters/errors</div>
+  <div class="area1" id="RG2524__sect20" style="display:none;"><span class="area2">
+  show hpna counters<br><br>
+  </span>
+  <div class="cmd"><pre>
+  <b>show hpna counters</b>
+
+  Counters for 00:0d:da:0e:6a:f9
+  Counter             Value                Description
+  =================== ==================== =======================================================
+  txPkt               134208               Total (good and bad) transmitted packets
+  txByte              182040974            Total (good and bad) transmitted bytes
+  rxPkt               1523                 Total (good and bad) received packets
+  rxByte              335639               Total (good and bad) received bytes
+  txBroadcast         167                  Transmitted broadcast packets
+  rxBroadcast         13                   Received broadcast packets
+  txMulticast         132703               Transmitted multicast packets
+  rxMulticast         342                  Received multicast packets
+  rxCrc               0                    Packets received with CRC error(s)
+  rxHostCrc           0                    Packets with CRC errors sent to the host
+  rxShort             0                    Received short packets
+  txShort             0                    Short packets received from the host
+  txDropped           0                    Packets from host dropped due to lack of HPNA resources
+  rxDropped           0                    Received packets dropped due to lack of HPNA resources
+  ctlReqPkt           841                  Control requests from local host (CERT/stats/FW loading)
+  ctlReplPkt          841                  Control replies to local host (CERT/stats/FW loading)
+  ctlRemoteReqPkt     0                    Control requests from remote HPNA host (CERT/Mgmt/FW)
+  ctlRemoteReplPkt    0                    Control replies to remote host (CERT/stats/FW loading)
+  txPercentPerCycle   7.15                 % time HPNA transmitter is busy per HPNA time cycle
+  idlePercentPerCycle 91.67                % time HPNA media is idle per HPNA time cycle
+  txPercentAvg        5.73                 % time HPNA transmitter is busy on average
+  idlePercentAvg      93.01                % time HPNA media is idle on average
+
+  Counters for 00:25:f1:b8:7f:dd
+  Counter             Value                Description
+  =================== ==================== =======================================================
+  txPkt               419                  Total (good and bad) transmitted packets
+  txByte              182974               Total (good and bad) transmitted bytes
+  rxPkt               133706               Total (good and bad) received packets
+  rxByte              182397299            Total (good and bad) received bytes
+  txBroadcast         7                    Transmitted broadcast packets
+  rxBroadcast         171                  Received broadcast packets
+  txMulticast         173                  Transmitted multicast packets
+  rxMulticast         133126               Received multicast packets
+  rxCrc               0                    Packets received with CRC error(s)
+  rxHostCrc           0                    Packets with CRC errors sent to the host
+  rxShort             0                    Received short packets
+  txShort             0                    Short packets received from the host
+  txDropped           0                    Packets from host dropped due to lack of HPNA resources
+  rxDropped           0                    Received packets dropped due to lack of HPNA resources
+  ctlReqPkt           15                   Control requests from local host (CERT/stats/FW loading)
+  ctlReplPkt          15                   Control replies to local host (CERT/stats/FW loading)
+  ctlRemoteReqPkt     33                   Control requests from remote HPNA host (CERT/Mgmt/FW)
+  ctlRemoteReplPkt    33                   Control replies to remote host (CERT/stats/FW loading)
+  txPercentPerCycle   0.00                 % time HPNA transmitter is busy per HPNA time cycle
+  idlePercentPerCycle 91.79                % time HPNA media is idle per HPNA time cycle
+  txPercentAvg        0.02                 % time HPNA transmitter is busy on average
+  idlePercentAvg      93.74                % time HPNA media is idle on average
+
+  Counters for 74:f6:12:a3:da:85
+  Counter             Value                Description
+  =================== ==================== =======================================================
+  txPkt               230                  Total (good and bad) transmitted packets
+  txByte              88425                Total (good and bad) transmitted bytes
+  rxPkt               133615               Total (good and bad) received packets
+  rxByte              182585174            Total (good and bad) received bytes
+  txBroadcast         6                    Transmitted broadcast packets
+  rxBroadcast         172                  Received broadcast packets
+  txMulticast         169                  Transmitted multicast packets
+  rxMulticast         133380               Received multicast packets
+  rxCrc               0                    Packets received with CRC error(s)
+  rxHostCrc           0                    Packets with CRC errors sent to the host
+  rxShort             0                    Received short packets
+  txShort             0                    Short packets received from the host
+  txDropped           0                    Packets from host dropped due to lack of HPNA resources
+  rxDropped           0                    Received packets dropped due to lack of HPNA resources
+  ctlReqPkt           15                   Control requests from local host (CERT/stats/FW loading)
+  ctlReplPkt          15                   Control replies to local host (CERT/stats/FW loading)
+  ctlRemoteReqPkt     33                   Control requests from remote HPNA host(CERT/Mgmt/FW)
+  ctlRemoteReplPkt    33                   Control replies to remote host (CERT/stats/FW loading)
+  txPercentPerCycle   0.00                 % time HPNA transmitter is busy per HPNA time cycle
+  idlePercentPerCycle 91.78                % time HPNA media is idle per HPNA time cycle
+  txPercentAvg        0.05                 % time HPNA transmitter is busy on average
+  idlePercentAvg      93.66                % time HPNA media is idle on average
+</pre></div>
+  <br><br></div></br></br>
+
+
+
+  <div class="title" onClick="showhide('RG2524__sect21');"></div>
+  <div class="area1" id="RG2524__sect21" style="display:none;"><span class="area2">
+  </span><br><br></div>
+
+  <div class="title" onClick="showhide('RG2524__sect0');"></div>
+  <div class="area1" id="RG2524__sect0" style="display:none;"><span class="area2">
+  </span><br><br></div>
+
+  <img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="disk1.PNG" height="50px" width="50px" alt="picture">
+<img src="asteroid.png" height="50px" width="50px" alt="picture"><br><br>
+
+
+<div class="Home__button">
+    <a href="#top">Back to top</a> 
+</div></br></br>
+
+    
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>
+```
+
+
